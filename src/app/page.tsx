@@ -35,12 +35,43 @@ export default function Home() {
         <div className="hero-orb hero-orb-two" />
         <div className="container hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow hero-eyebrow">DATA SCIENCE · APPLIED AI · SYSTEMS</p>
-            <h1>
-              Building useful AI,
-              <span> from model to workflow.</span>
+            <p className="eyebrow hero-eyebrow">
+              DATA SCIENCE · APPLIED AI · AI SYSTEMS
+            </p>
+
+           
+            <h1 className="hero-title">
+              <span
+                style={{
+                  display: "block",
+                  color: "#ffffff",
+                  fontSize: "clamp(3.5rem, 5.5vw, 6rem)",
+                  lineHeight: "0.98",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                Hi, I&apos;m Yuzhang Liu.
+              </span>
+
+              <span
+                style={{
+                  display: "block",
+                  color: "#9db9ff",
+                  fontSize: "clamp(2.5rem, 4vw, 4.2rem)",
+                  lineHeight: "1.1",
+                  letterSpacing: "0.015em",
+                  maxWidth: "900px",
+                }}
+              >
+                I build reliable AI and data systems for real-world problems.
+              </span>
             </h1>
-            <p className="hero-lede">{profile.headline}</p>
+
+            <p className="hero-lede">
+              Incoming M.S.E. student in Data Science at the University of Pennsylvania,
+              with experience in machine learning, LLM-assisted applications, enterprise
+              workflow automation, and large-scale data analytics.
+            </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">
                 Explore projects
@@ -112,13 +143,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section" id="education">
+        <div className="container two-column education-grid">
+          <SectionHeading eyebrow="02 / EDUCATION" title="Grounded in data science and statistics." />
+          <div className="education-list">
+            {education.map((item) => (
+              <article key={item.school}>
+                <p className="timeline-period">{item.period}</p>
+                <h3>{item.school}</h3>
+                <p>{item.degree}</p>
+                <span>{item.note}</span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section section-muted" id="experience">
         <div className="container">
           <SectionHeading
-            eyebrow="02 / EXPERIENCE"
-            title="Working across healthcare, semiconductors, and enterprise systems."
-            copy="A mix of analytical depth, software implementation, and cross-functional problem solving."
-          />
+              eyebrow="03 / EXPERIENCE"
+              title={
+                "Building across semiconductors, healthcare analytics, industrial manufacturing, and enterprise software."
+              }
+              copy={
+                "Applying data science, AI, and software engineering to complex, real-world industry challenges."
+              }
+            />
           <div className="timeline">
             {experiences.slice(1).map((experience, index) => (
               <article className="timeline-item" key={`${experience.organization}-${experience.role}`}>
@@ -138,7 +189,7 @@ export default function Home() {
       <section className="section" id="projects">
         <div className="container">
           <SectionHeading
-            eyebrow="03 / SELECTED PROJECTS"
+            eyebrow="04 / Related PROJECTS"
             title="Projects designed around measurable outcomes."
             copy="Each case study shows the problem, technical approach, and impact—not just the tool list."
           />
@@ -155,16 +206,20 @@ export default function Home() {
         </div>
       </section>
 
+    
+   
       <section className="section section-dark" id="skills">
         <div className="container">
           <SectionHeading
-            eyebrow="04 / CAPABILITIES"
+            eyebrow="05 / CAPABILITIES"
             title="A balanced toolkit for data, models, and delivery."
           />
+
           <div className="skills-grid">
             {skillGroups.map((group) => (
               <article className="skill-card" key={group.title}>
                 <h3>{group.title}</h3>
+
                 <div className="skill-list">
                   {group.items.map((item) => (
                     <span key={item}>{item}</span>
@@ -176,23 +231,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="education">
-        <div className="container two-column education-grid">
-          <SectionHeading eyebrow="05 / EDUCATION" title="Grounded in data science and statistics." />
-          <div className="education-list">
-            {education.map((item) => (
-              <article key={item.school}>
-                <p className="timeline-period">{item.period}</p>
-                <h3>{item.school}</h3>
-                <p>{item.degree}</p>
-                <span>{item.note}</span>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section className="contact-section" id="contact">
+      
+      {/* <section className="contact-section" id="contact">
         <div className="container contact-card">
           <div>
             <p className="eyebrow">LET’S CONNECT</p>
@@ -213,7 +254,7 @@ export default function Home() {
             Before publishing, replace the placeholder LinkedIn and GitHub links in <code>src/data/portfolio.ts</code>.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <footer className="site-footer">
         <div className="container footer-row">

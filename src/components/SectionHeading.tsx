@@ -2,6 +2,7 @@ type SectionHeadingProps = {
   eyebrow: string;
   title: string;
   copy?: string;
+  description?: string;
 };
 
 export function SectionHeading({ eyebrow, title, copy }: SectionHeadingProps) {
