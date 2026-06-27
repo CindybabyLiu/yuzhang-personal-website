@@ -19,10 +19,10 @@ export const profile = {
     "Incoming M.S.E. student in Data Science at the University of Pennsylvania with a B.S. in Data Science and a minor in Actuarial Science from the University of Florida. My experience spans enterprise software engineering, anomaly detection, LLM-assisted applications, semiconductor analytics, database systems, geospatial products, and workflow automation.",
   availability:
     "Open to 2027 data science, applied AI, machine learning, and AI engineering opportunities.",
-  email: "liuyuz@seas.upenn.edu",
+  email: "liuyuz@engineering.upenn.edu",
   // Replace these two links with your own profiles before publishing.
-  linkedin: "https://www.linkedin.com/in/your-linkedin",
-  github: "https://github.com/your-github",
+  linkedin: "https://www.linkedin.com/in/yuzhang-liu-x09051420r",
+  github: "https://github.com/CindybabyLiu",
 };
 
 export const metrics = [
