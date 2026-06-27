@@ -203,10 +203,10 @@ export default function Home() {
               Email me
             </a>
             <a className="button button-outline-light" href={profile.linkedin} target="_blank" rel="noreferrer">
-              LinkedIn
+              https://www.linkedin.com/in/yuzhang-liu-x09051420r
             </a>
             <a className="button button-outline-light" href={profile.github} target="_blank" rel="noreferrer">
-              GitHub
+              https://github.com/CindybabyLiu
             </a>
           </div>
           <p className="privacy-note">

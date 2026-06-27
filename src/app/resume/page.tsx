@@ -26,7 +26,15 @@ export default function ResumePage() {
           <div className="resume-contact">
             <span>Philadelphia, PA</span>
             <span>{profile.email}</span>
-            <span>LinkedIn · GitHub</span>
+            <span>
+  <a href={profile.linkedin} target="_blank" rel="noreferrer">
+    linkedin.com/in/yuzhang-liu-x09051420
+  </a>
+  {" · "}
+  <a href={profile.github} target="_blank" rel="noreferrer">
+    github.com/CindybabyLiu
+  </a>
+</span>
           </div>
         </header>
 

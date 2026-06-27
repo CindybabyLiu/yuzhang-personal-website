@@ -20,7 +20,6 @@ export const profile = {
   availability:
     "Open to 2027 data science, applied AI, machine learning, and AI engineering opportunities.",
   email: "liuyuz@engineering.upenn.edu",
-  // Replace these two links with your own profiles before publishing.
   linkedin: "https://www.linkedin.com/in/yuzhang-liu-x09051420r",
   github: "https://github.com/CindybabyLiu",
 };
